@@ -4,7 +4,7 @@ Jaime Moran
 Jan 25, 2016
 
 
-![screenshot](http://i.imgur.com/cSIps5R.gifv)
+![screenshot](http://i.imgur.com/cSIps5R.gif)
 
 ## Notes
 
