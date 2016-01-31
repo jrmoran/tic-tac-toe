@@ -78,16 +78,13 @@ var startGame = function(){
     // console.log('nMoves', nMoves, 'grid length', grid.length);
 
     i = i.toString().trim();
-    promptPlayer();
 
     // input index is non-zero index
     if(makeAMove(i - 1)){
       printBoard();
       nMoves++;
-      promptPlayer();
     }else{
       console.log('invalid move');
-      promptPlayer();
     }
     
     var winner = findWinner();
@@ -96,6 +93,8 @@ var startGame = function(){
       printBoard();
       console.log("Player", winner.player, 'WINS!');
       stdin.pause();
+    }else{
+      promptPlayer();
     }
 
     if(nMoves === grid.length){
