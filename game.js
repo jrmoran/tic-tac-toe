@@ -64,7 +64,6 @@ var makeAMove = function(i, value){
 var nMoves = 0;
 
 var startGame = function(){
-  var activePlayer = 'X';
   var stdin = process.openStdin();
 
   console.log('=================');
@@ -92,6 +91,7 @@ var startGame = function(){
     }
     
     var winner = findWinner();
+
     if(winner){
       printBoard();
       console.log("Player", winner.player, 'WINS!');
